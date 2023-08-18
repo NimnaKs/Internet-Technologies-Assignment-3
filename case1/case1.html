@@ -4,10 +4,51 @@
     <meta charset="UTF-8">
     <title>Assignment-3-Case-1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        section{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        section>main{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+
+        section>main:first-child{
+            background-color: red;
+        }
+
+        section>main:nth-child(2){
+            background-color: green;
+            right: 0;
+        }
+
+        section>main:nth-child(3){
+            background-color: orange;
+            bottom: 0;
+        }
+
+        section>main:nth-child(4){
+            background-color: deeppink;
+            bottom: 0;
+            right: 0;
+        }
+
+    </style>
 </head>
 <body>
 
-    
+    <section>
+        <main></main>
+        <main></main>
+        <main></main>
+        <main></main>
+    </section>
 
 </body>
 </html>
