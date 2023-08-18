@@ -127,7 +127,7 @@
             bottom: 0;
         }
 
-        section>.main>div {
+        section>.main>div:first-child{
             width: 15vw;
             height: 15vw;
             background: white;
@@ -141,7 +141,7 @@
             margin: auto;
         }
 
-        section>.main>div>div {
+        section>.main>div:first-child>div {
             width: 7vw;
             height: 7vw;
             background: red;
@@ -181,6 +181,37 @@
            margin: auto;
        }
 
+       section>.main>.quarter {
+           width: 7vw;
+           height: 7vw;
+           background: white;
+           position: absolute;
+       }
+
+       section>.main:first-child>.quarter,
+       section>.main:nth-child(2)>.quarter{
+           border-radius: 0 0 100% 0;
+       }
+
+        section>.main:first-child>.quarter:nth-child(2),
+        section>.main:nth-child(2)>.quarter:nth-child(2){
+            border-radius: 0 0 0 100%;
+            right: 0;
+        }
+
+        section>.main:nth-child(3)>.quarter,
+        section>.main:nth-child(4)>.quarter{
+            border-radius: 0 100% 0 0;
+            bottom: 0;
+        }
+
+        section>.main:nth-child(3)>.quarter:nth-child(2),
+        section>.main:nth-child(4)>.quarter:nth-child(2){
+            border-radius: 100% 0 0 0;
+            right: 0;
+            bottom: 0;
+        }
+
     </style>
 </head>
 <body>
@@ -191,24 +222,32 @@
             <div>
                 <div></div>
             </div>
+            <div class="quarter"></div>
+            <div class="quarter"></div>
         </div>
 
         <div class="main">
             <div>
                 <div></div>
             </div>
+            <div class="quarter"></div>
+            <div class="quarter"></div>
         </div>
 
         <div class="main">
             <div>
                 <div></div>
             </div>
+            <div class="quarter"></div>
+            <div class="quarter"></div>
         </div>
 
         <div class="main">
             <div>
                 <div></div>
             </div>
+            <div class="quarter"></div>
+            <div class="quarter"></div>
         </div>
 
         <div id="mid-box">
